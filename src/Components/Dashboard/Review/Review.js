@@ -24,7 +24,7 @@ const Review = () => {
       userEmail: user.email,
     };
 
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://enigmatic-ocean-37099.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

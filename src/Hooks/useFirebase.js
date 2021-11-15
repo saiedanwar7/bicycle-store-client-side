@@ -88,7 +88,7 @@ const useFirebase = () => {
 
   const postUserDb = (user, name, email, method) => {
     const newUser = { user, name, email };
-    fetch("http://localhost:5000/users", {
+    fetch("https://enigmatic-ocean-37099.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -138,7 +138,7 @@ const useFirebase = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://enigmatic-ocean-37099.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
        // console.log(data);

@@ -5,7 +5,7 @@ const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://enigmatic-ocean-37099.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
@@ -15,7 +15,7 @@ const ManageOrders = () => {
 
         const proceed = window.confirm("Are You Sure, You Want To Cancel This Order !!!")
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://enigmatic-ocean-37099.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const ManageOrders = () => {
     const handleShippedOrder = id => {
 
         const approved = { status: "Approved" }
-        const url = `http://localhost:5000/orders/${id}`
+        const url = `https://enigmatic-ocean-37099.herokuapp.com/orders/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

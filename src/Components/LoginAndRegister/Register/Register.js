@@ -50,17 +50,17 @@ return (
         
          <Form onSubmit={handleRegister}>
          <Form.Group className="mb-3">
-            <Form.Label>Name</Form.Label>
+            {/* <Form.Label>Name</Form.Label> */}
              <Form.Control onBlur={handleOnBlur} type="name" name="name" placeholder="Enter name" required id="userName"/>
         </Form.Group>
 
          <Form.Group className="mb-3">
-            <Form.Label>Email address</Form.Label>
+            {/* <Form.Label>Email address</Form.Label> */}
             <Form.Control onBlur={handleOnBlur} type="email" name="email" placeholder="Enter email" required/>
          </Form.Group>
 
           <Form.Group className="mb-3">
-             <Form.Label>Password</Form.Label>
+             {/* <Form.Label>Password</Form.Label> */}
              <Form.Control onBlur={handleOnBlur} type="password" name="password" placeholder="Password"  required/>
            </Form.Group>
 
@@ -73,7 +73,7 @@ return (
         </Form>
 
               <div className="text-center mt-3">
-                  <Link onClick={() =>setError('')} to='/login'>Already Registered ?</Link>
+                  <Link className="fw-bold" onClick={() =>setError('')} to='/login'>Already Registered ?</Link>
                 </div>
 
              <div className="login-from mx-auto mt-3">

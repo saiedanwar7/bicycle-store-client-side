@@ -8,7 +8,7 @@ const MyOrders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders/product?email=${user?.email}`)
+    fetch(`https://enigmatic-ocean-37099.herokuapp.com/orders/product?email=${user?.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user]);
@@ -20,7 +20,7 @@ const MyOrders = () => {
       "Are you sure? You Want To Cancel This Order !!!"
     );
     if (proceed) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://enigmatic-ocean-37099.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

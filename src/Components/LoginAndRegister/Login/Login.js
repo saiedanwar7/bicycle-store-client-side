@@ -47,13 +47,13 @@ const Login = () => {
 
                 <Form onSubmit={handleLogin}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label className="fw-bold">Email address</Form.Label>
+                    {/* <Form.Label className="fw-bold">Email address</Form.Label> */}
                      <Form.Control onBlur={handleOnBlur} type="email" name="email" placeholder="Enter email" required />         
                 </Form.Group>
 
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label className="fw-bold">Password</Form.Label>
+                    {/* <Form.Label className="fw-bold">Password</Form.Label> */}
                     <Form.Control onBlur={handleOnBlur} type="password" name="password" placeholder="Password" required/>
                 </Form.Group>
 
@@ -63,7 +63,7 @@ const Login = () => {
                   </Button>
 
 
-               <div className="text-center fw-bold mt-2">
+               <div className="text-center fw-bold mt-4">
                <Link onClick={()=>setError("")} to="/register">NEW USER? PLEASE REGISTER</Link> 
                 </div>
            </Form>

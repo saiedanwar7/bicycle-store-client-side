@@ -20,7 +20,7 @@ const OrderAndDetails = () => {
     const [orderInfo, setOrderInfo] = useState(initInfo);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${product_id}`)
+        fetch(`https://enigmatic-ocean-37099.herokuapp.com/products/${product_id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [product_id])
@@ -46,7 +46,7 @@ const OrderAndDetails = () => {
   
      // Data Send To The Server
 
-     fetch('http://localhost:5000/orders', {
+     fetch('https://enigmatic-ocean-37099.herokuapp.com/orders', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

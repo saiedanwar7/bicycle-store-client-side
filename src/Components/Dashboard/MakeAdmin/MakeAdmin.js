@@ -13,7 +13,7 @@ const MakeAdmin = () => {
         const user = {email}
         //console.log(user.email);
 
-        fetch("http://localhost:5000/users/admin", {
+        fetch("https://enigmatic-ocean-37099.herokuapp.com/users/admin", {
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'
