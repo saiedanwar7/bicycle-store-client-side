@@ -52,19 +52,20 @@ const MyOrders = () => {
               </div>
 
               <Card.Body className="row align-items-center justify-content-around ">
+
                 <div className="col-md-4">
-                  <Card.Title className="title-color mb-2 ">
-                    {order?.bookingInfo?.product_name}
-                  </Card.Title>
-                  <h6 className=" m-2">
-                    Price : {order?.bookingInfo?.price} $
-                  </h6>
-                  <p className=" m-0">
-                    <span className="fw-bold">Status :</span> {order?.status}
-                  </p>
+                    <Card.Title className="title-color mb-2 ">
+                      {order?.bookingInfo?.product_name}
+                    </Card.Title>
+                    <h6 className=" m-2">
+                      Price : {order?.bookingInfo?.price} $
+                    </h6>
+                    <p className=" m-0">
+                      <span className="fw-bold">Status :</span> {order?.status}
+                    </p>
                 </div>
 
-                <div className="col-md-5 text-start">
+            <div className="col-md-5 text-start">
                   <p className=" m-0">
                     <span className="fw-bold">Name : </span> {order?.name}
                   </p>
@@ -80,13 +81,12 @@ const MyOrders = () => {
                   <p className="m-0">
                     <span className="fw-bold">City : </span> {order?.city}
                   </p>
-                </div>
+            </div>
                 
                 <div className="col-md-3">
                   <button
                     onClick={() => handleDeleteOrder(order?._id)}
-                    className="btn w-100 cancel-btn fw-bold"
-                  >
+                    className="btn w-100 cancel-btn fw-bold">
                     Cencel Order
                   </button>
                 </div>

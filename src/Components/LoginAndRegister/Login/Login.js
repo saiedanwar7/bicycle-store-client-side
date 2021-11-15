@@ -24,8 +24,6 @@ const Login = () => {
         setError("");
     }
 
-
-
     const handleLogin = (e) =>{
         e.preventDefault()
         loginUser(loginData.email, loginData.password, location, history)
@@ -64,7 +62,7 @@ const Login = () => {
 
 
                <div className="text-center fw-bold mt-4">
-               <Link onClick={()=>setError("")} to="/register">NEW USER? PLEASE REGISTER</Link> 
+                  <Link onClick={()=>setError("")} to="/register">NEW USER? PLEASE REGISTER</Link> 
                 </div>
            </Form>
 
@@ -73,9 +71,9 @@ const Login = () => {
                 <p className="text-center">OR</p>
                 <button onClick={handleGoogleLogin} className="btn fw-bold re-button w-100 ">Continue With Google</button>
             </div>
-                </Col>
-            </Row>
-        </Container>
+        </Col>
+     </Row>
+</Container>
 
      </>
     );

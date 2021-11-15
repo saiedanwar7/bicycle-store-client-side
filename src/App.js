@@ -23,41 +23,41 @@ function App() {
   
    <Switch>
 
-    <Route exact path="/">
-        <Home></Home>
+      <Route exact path="/">
+          <Home></Home>
+        </Route>
+
+        <Route exact path="/home">
+          <Home></Home>
+        </Route>
+
+        <Route path="/login">
+          <Login></Login>
+        </Route>
+
+        <Route path='/register'>
+          <Register></Register>
+        </Route>
+
+      <Route path="/about">
+        <About></About>
       </Route>
 
-    <Route exact path="/home">
-      <Home></Home>
-    </Route>
+        <Route path="/exploreproducts">
+          <ExploreProducts></ExploreProducts>
+        </Route>
 
-    <Route path="/login">
-      <Login></Login>
-    </Route>
-
-    <Route path='/register'>
-      <Register></Register>
-    </Route>
-
-    <Route path="/about">
-      <About></About>
-    </Route>
-
-      <Route path="/exploreproducts">
-        <ExploreProducts></ExploreProducts>
-      </Route>
-
-    <PrivateRoute path='/dashboard'>
-      <Dashboard></Dashboard>
-    </PrivateRoute>
+        <PrivateRoute path='/dashboard'>
+          <Dashboard></Dashboard>
+        </PrivateRoute>
     
-    <PrivateRoute path="/products/order_details/:product_id">
-        <OrderAndDetails></OrderAndDetails>
-    </PrivateRoute>
+      <PrivateRoute path="/products/order_details/:product_id">
+          <OrderAndDetails></OrderAndDetails>
+      </PrivateRoute>
 
-    <Route path="*">
-      <NotFound></NotFound>
-    </Route>
+      <Route path="*">
+        <NotFound></NotFound>
+      </Route>
 
 </Switch>
 

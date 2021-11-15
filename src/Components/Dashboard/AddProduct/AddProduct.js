@@ -3,15 +3,16 @@ import { Container, Form } from "react-bootstrap";
 import "./AddProduct.css";
 
 const AddProduct = () => {
-  const [addProduct, setAddProduct] = useState({});
+    const [addProduct, setAddProduct] = useState({});
 
-  const handleOnBlur = (e) => {
-    const field = e.target.name;
-    const value = e.target.value;
-    const newLoginData = { ...addProduct };
-    newLoginData[field] = value;
-    setAddProduct(newLoginData);
-  };
+      const handleOnBlur = (e) => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newLoginData = { ...addProduct };
+        newLoginData[field] = value;
+        setAddProduct(newLoginData);
+      };
+
   const handleAddProduct = (e) => {
     e.preventDefault();
 
@@ -30,6 +31,7 @@ const AddProduct = () => {
         }
       });
   };
+  
   return (
     <Container className="w-75">
       <h2 className="my-4 title-color">Add Product</h2>
