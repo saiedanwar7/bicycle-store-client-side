@@ -37,8 +37,8 @@ const MyOrders = () => {
 
   return (
     <Container>
-      <h2 className="my-4 text-center or-title fw-bold">My Order</h2>
-      <Row className="per-order" xs={1}>
+      <h2 className="my-4 text-center or-title fw-bold">My Orders</h2>
+      <Row xs={1}>
         {orders?.map((order) => (
           <Col className="mb-4" key={order._id}>
             <div className="d-md-flex shadow order-box">
@@ -53,10 +53,10 @@ const MyOrders = () => {
 
               <Card.Body className="row align-items-center justify-content-around ">
                 <div className="col-md-4">
-                  <Card.Title className="pakage-title m-0 ">
+                  <Card.Title className="title-color mb-2 ">
                     {order?.bookingInfo?.product_name}
                   </Card.Title>
-                  <h6 className="price m-0">
+                  <h6 className=" m-2">
                     Price : {order?.bookingInfo?.price} $
                   </h6>
                   <p className=" m-0">
@@ -64,24 +64,24 @@ const MyOrders = () => {
                   </p>
                 </div>
 
-                <div className="col-md-5 ">
+                <div className="col-md-5 text-start">
                   <p className=" m-0">
-                    <span className="fw-bold">Name :</span> {order?.name}
+                    <span className="fw-bold">Name : </span> {order?.name}
                   </p>
                   <p className=" m-0">
-                    <span className="fw-bold">Email :</span> {order?.userEmail}
+                    <span className="fw-bold">Email : </span> {order?.userEmail}
                   </p>
                   <p className=" m-0">
-                    <span className="fw-bold">Phone :</span>
-                    {order?.phoneNumber}
+                    <span className="fw-bold">Phone : </span> {order?.phoneNumber}
                   </p>
                   <p className=" m-0">
-                    <span className="fw-bold">Address :</span> {order?.address}
+                    <span className="fw-bold">Address : </span> {order?.address}
                   </p>
-                  <p className=" m-0">
-                    <span className="fw-bold">City :</span> {order?.city}
+                  <p className="m-0">
+                    <span className="fw-bold">City : </span> {order?.city}
                   </p>
                 </div>
+                
                 <div className="col-md-3">
                   <button
                     onClick={() => handleDeleteOrder(order?._id)}
