@@ -1,0 +1,14 @@
+.order-box{
+    border:1px solid #fd902b;;
+}
+.order-box:hover{
+    border:1px solid rgb(12, 11, 11);
+}
+
+.or-title{
+    color: #fd902b;
+}
+.cancel-btn{
+    background-color: #fd902b;
+    color:white;
+}

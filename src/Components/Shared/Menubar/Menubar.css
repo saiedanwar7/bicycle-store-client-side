@@ -1,0 +1,23 @@
+/* .nav-bg {
+    background-color: #fa902d !important;
+    border-bottom: 1px solid rgb(248, 202, 202);
+  } */
+
+  .text-color {
+    color: #ffffff !important;
+  }
+  .text-color:hover{
+    color: #fa902d !important;
+  }
+.btn-log{
+  color: #ffffff !important;
+  border: 3px solid white;
+}
+.btn-log:hover{
+  background-color: #fd902b;
+}
+
+
+  .log-and-out-btn {
+    border: 3px solid rgb(248, 248, 248);
+  }

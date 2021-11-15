@@ -1,0 +1,18 @@
+.list-style{
+    list-style-type: none;
+}
+.ft-color{
+    background-color: rgb(6, 8, 8);
+}
+
+.link-color{
+    color:white !important;
+}
+
+.link-color:hover{
+    color:rgb(251, 173, 2) !important;
+}
+
+.title-color{
+    color:#fa953d;
+}

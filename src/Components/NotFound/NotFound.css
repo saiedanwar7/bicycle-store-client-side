@@ -1,0 +1,17 @@
+.not-found{
+    height: 310px;
+}
+
+.error{
+    color: red;
+
+}
+
+.home-button{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(253, 95, 22);
+}
+
+/* .link-color{
+    color:white;
+} */

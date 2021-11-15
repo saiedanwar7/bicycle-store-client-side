@@ -1,0 +1,18 @@
+.product-name{
+    background-color: #e74e00;
+    color:white;
+    border-radius: 5px;
+}
+
+.details{
+    font-size: 18px;
+}
+
+.title{
+    color: #e74e00;
+}
+
+.or-btn{
+    background-color:#ff6010;
+    color: white;
+}

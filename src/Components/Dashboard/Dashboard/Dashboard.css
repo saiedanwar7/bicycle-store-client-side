@@ -1,0 +1,55 @@
+@media only screen and (max-width: 768px) {
+  .dashbox {
+    display: none !important;
+  }
+}
+.box-btn {
+  color: rgb(0, 0, 0);
+}
+
+.dashboard-font {
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid white;
+}
+.dashboard-font:hover {
+  background-color: #fd902b !important;
+  border: 1px solid black;
+}
+.dashboard-font:hover .box-btn {
+  color: white !important;
+}
+
+.dashbox {
+  border-right: 1px solid grey;
+}
+
+.bg-color {
+  background-color: #fd902b;
+}
+.dash-text {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.dash-text:hover {
+  background-color: white;
+  color: #fd902b !important;
+}
+.log-btn {
+  border: 1px solid black;
+  background-color: #fd902b;
+}
+
+.log-btn:hover {
+  background-color: white;
+  color: #fd902b !important;
+}
+.user-color {
+  color: #fd902b;
+}
+
+.user-icon {
+  color: #fd902b;
+  border: 2px solid black;
+  border-radius: 10px;
+}
